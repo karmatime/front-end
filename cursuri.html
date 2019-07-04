@@ -134,7 +134,7 @@
                 </div>
                 <div class="card-body">
                     <div class="card-text text-muted">
-                        <p><b>Trainers</b>: Ionut Enache &amp; Horatiu Prica</p>
+                        <p><b>Trainers</b>: Ionut Enache &amp; Horatiu Prica - Caphyon</p>
                         <p><b>Difficulty</b>: Beginner - Intermediate</p>
                         <p><b>Format</b>: 2 courses ~ 2h</p>
                     </div>
@@ -156,6 +156,7 @@
                         <p ><b>Difficulty</b>: Beginner - Intermediate</p>
                         <p ><b>Format</b>: 6 courses ~ 2h</p>
                     </card>
+                    <button class="btn btn-primary" data-placement="top">Learn more</button>
                     <a href="#" class="btn btn-primary">Participa</a>
                 </div>
             </div>
@@ -246,7 +247,13 @@
     </div> 
     <footer class="page-footer font-small"> 
         <div class="footer-copyright text-center py-3">@2019 Copyright.AndreeaSB</div> 
-    </footer>  
+    </footer> 
+    
+    <script>
+        $(document).ready(function(){
+            $('.btn-primary').popover({content:"In this course, we will learn how to create and improve a desktop application using .NET WPF (Windows Presentation Foundation).The lecture covers the importance of continuously improving your code and software architecture. More than that, we will show you how to do it. Let's discover together the design pattern that stands behind the WPF Framework and how to use modern tools to create a better product.", animation:true});
+        });
+    </script>
  
   </body>
 </html>
