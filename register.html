@@ -38,7 +38,7 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="home.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="cursuri.html">Cursuri</a>
@@ -70,25 +70,26 @@
             <div class="card-header">
                 <h5 >Inscriere</h5></div>
             <div class="card-body">
-          <form action="commands.php" method="POST">
+          <form class=>
              <div class="form-group">
                 <label for="nume">Nume</label>
-                <input type="text" class="form-control" id="nume" placeholder="Nume">     
+                <input type="text" class="form-control" id="nume" placeholder="Nume" required> 
              </div>
              <div class="form-group">
                  <label for="prenume">Prenume</label>
-                 <input type="text" class="form-control"
-                 id="prenume" placeholder="Prenume">
+                 <input type="text" class="form-control" 
+                 id="prenume" placeholder="Prenume" required>
              </div>
              <div class="form-group">
                  <label for="email">
                      Email
                  </label>
-                 <input type="email" class="form-control" id="email" placeholder="Email">
+                 <input type="email" class="form-control " id="email" placeholder="Email" required>
              </div>
              <div class="form-group">
                  <label for="profesie">Profesie</label>
-                 <select class="form-control" id="profesie" >
+                 <select class="form-control" id="profesie" required>
+                     <option>--Profesie--</option>
                      <option>Elev</option>
                      <option>Student</option>
                      <option>Angajat</option>
@@ -96,12 +97,15 @@
              </div>
              <div class="form-group">
                  <label for="password">Password</label>
-                 <input type="password" class="form-control" id="password" placeholder="Password">
+                 <input type="password" class="form-control" id="password" placeholder="Password" required>
                  <small class="form-text text-muted">Parola trebuie sa contine cel putin 6 caractere.Nu este permisa folosirea caracterelor speciale.</small>
              </div>
              <div class="form-group">
                  <label for="confirm">Confirm password</label>
-                 <input type="password" class="form-control" id="confirm" placeholder="Password">
+                 <input type="password" class="form-control" id="confirm" placeholder="Password" required>
+             </div>
+             <div class="form-group">
+                 <button type="submit" class="btn btn-primary btn block">Inregistreaza</button>
              </div>
           </form>
         </div>
