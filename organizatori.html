@@ -39,6 +39,11 @@
             margin-left:30px;
 
         }
+        .btn:hover,.btn:active, .btn:focus,.btn{
+        background-color:#25004e;
+        color:#a5a5a5e7;
+    }
+    
     </style>
   </head>
   <body>
@@ -68,6 +73,20 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Organizatori</a>
                  </li>
+                 <li class="nav-item">
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-outline dropdown-toggle" data-toggle="dropdown">
+                                Contul meu
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="register.html">
+                                    Inscriere
+                                </a>
+                                <a class="dropdown-item" href="login.html">Logare</a>
+                                <a class="dropdown-item" href="gestiune-cont.html">Setari cont</a>
+                            </div>
+                        </div>
+                    </li>
              </ul>
          </div>
      </nav>

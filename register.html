@@ -22,6 +22,11 @@
             width:100%;
             color:black;
         }
+        .btn:hover,.btn:active, .btn:focus,.btn{
+        background-color:#25004e;
+        color:#a5a5a5e7;
+    }
+    
         
         </style>
 
@@ -56,21 +61,32 @@
                             <a class="nav-link" href="organizatori.html">Organizatori</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Inscriere</a>
-                        </li>
+                                <div class="dropdown">
+                                    <button type="button" class="btn btn-outline dropdown-toggle" data-toggle="dropdown">
+                                        Contul meu
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="register.html">
+                                            Inscriere
+                                        </a>
+                                        <a class="dropdown-item" href="login.html">Logare</a>
+                                        <a class="dropdown-item" href="gestiune-cont.html">Setari cont</a>
+                                    </div>
+                                </div>
+                            </li>
                     </ul>
                 </div>
             </nav>
       
      <div class="container">
-         <div class="row justify-content-row">
+         <div class="row">
              <div class="col-sm-2"></div>
          <div class="col-sm-8 ml-4 mt-4">
         <div class="card">
             <div class="card-header">
                 <h5 >Inscriere</h5></div>
             <div class="card-body">
-          <form class=>
+          <form>
              <div class="form-group">
                 <label for="nume">Nume</label>
                 <input type="text" class="form-control" id="nume" placeholder="Nume" required> 
@@ -81,6 +97,12 @@
                  id="prenume" placeholder="Prenume" required>
              </div>
              <div class="form-group">
+                 <label for="username">
+                     Username
+                 </label>
+                 <input type="text" class="form-control" id="username" placeholder="Username" required>
+             </div>
+             <div class="form-group">
                  <label for="email">
                      Email
                  </label>
@@ -89,7 +111,6 @@
              <div class="form-group">
                  <label for="profesie">Profesie</label>
                  <select class="form-control" id="profesie" required>
-                     <option>--Profesie--</option>
                      <option>Elev</option>
                      <option>Student</option>
                      <option>Angajat</option>
@@ -108,6 +129,9 @@
                  <button type="submit" class="btn btn-primary btn block">Inregistreaza</button>
              </div>
           </form>
+        </div>
+        <div class="card-footer align-content-center">
+            <p>Ai cont?<a href="login.html">Logare</a></p>
         </div>
         </div>
     </div>
