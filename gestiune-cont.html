@@ -21,6 +21,10 @@
             width:100%;
             color:black;
         }
+        .btn:hover,.btn:active, .btn:focus,.btn{
+        background-color:#25004e;
+        color:#a5a5a5e7;
+    }
             
      </style>
   </head>
@@ -62,13 +66,56 @@
                                         Inscriere
                                     </a>
                                     <a class="dropdown-item" href="login.html">Logare</a>
-                                    <a class="dropdown-item" href="gestiune-cont.html">Setari cont</a>
+                                    <a class="dropdown-item" href="gestiune-cont.html">Info cont</a>
                                 </div>
                             </div>
                         </li>
                     </ul>
                 </div>
             </nav>
+     <div class="container">
+         <div class="row">
+             <div class="col-sm-2"></div>
+             <div class="col-sm-8 ml-4 mt-4">
+                 <div class="card">
+                     <div class="card-header">
+                         <h5>Info cont</h5>
+                     </div>
+                     <div class="card-body">
+                         <form class="form-horizontal">
+                             <div class="form-group row">
+                                 <label for="nume" class="col-lg-3 col-form-label">Nume</label>
+                                 <div class="col-lg-9">
+                                 <input type="text" class="form-control" id="nume" name="nume" value="Lee" readonly>
+                                </div>
+                             </div>
+                             <div class="form-group row">
+                                 <label for="prenume" class="col-lg-3 col-form-label">Prenume</label>
+                                 <div class="col-lg-9">
+                                 <input type="text" class="form-control" id="prenume" name="prenume" value="Mark" readonly></div>
+                             </div>
+                             <div class="form-group row">
+                                 <label for="email" class="col-lg-3 col-form-label">
+                                     Email
+                                 </label>
+                                 <div class="col-lg-9">
+                                 <input type="email" class="form-control" id="email" name="email" value="marklee@gmail.com" readonly></div>
+                             </div>
+                             <div class="form-group row">
+                                 <label for="profesie" class="col-lg-3 col-form-label">Profesie</label>
+                                 <div class="col-lg-9">
+                                 <input class="form-control" id="profesie" name="profesie" value="Student" readonly>
+                             </div>
+                            </div>
+                             <div class="form-group text-right">
+                                 <button type="submit" class="btn btn-primary">Salveaza modificarile</button>
+                             </div>
+                         </form>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
 
      <footer class="page-footer font-small">
                 

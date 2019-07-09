@@ -26,7 +26,6 @@
         background-color:#25004e;
         color:#a5a5a5e7;
     }
-    
         
         </style>
 
@@ -70,7 +69,7 @@
                                             Inscriere
                                         </a>
                                         <a class="dropdown-item" href="login.html">Logare</a>
-                                        <a class="dropdown-item" href="gestiune-cont.html">Setari cont</a>
+                                        <a class="dropdown-item" href="gestiune-cont.html">Info cont</a>
                                     </div>
                                 </div>
                             </li>
@@ -89,18 +88,12 @@
           <form>
              <div class="form-group">
                 <label for="nume">Nume</label>
-                <input type="text" class="form-control" id="nume" placeholder="Nume" required> 
+                <input type="text" class="form-control" id="nume" name="nume" placeholder="Nume" required> 
              </div>
              <div class="form-group">
                  <label for="prenume">Prenume</label>
                  <input type="text" class="form-control" 
-                 id="prenume" placeholder="Prenume" required>
-             </div>
-             <div class="form-group">
-                 <label for="username">
-                     Username
-                 </label>
-                 <input type="text" class="form-control" id="username" placeholder="Username" required>
+                 id="prenume" name="prenume" placeholder="Prenume" required>
              </div>
              <div class="form-group">
                  <label for="email">
@@ -110,7 +103,7 @@
              </div>
              <div class="form-group">
                  <label for="profesie">Profesie</label>
-                 <select class="form-control" id="profesie" required>
+                 <select class="form-control" id="profesie" name="profesie" required>
                      <option>Elev</option>
                      <option>Student</option>
                      <option>Angajat</option>
@@ -118,20 +111,20 @@
              </div>
              <div class="form-group">
                  <label for="password">Password</label>
-                 <input type="password" class="form-control" id="password" placeholder="Password" required>
+                 <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
                  <small class="form-text text-muted">Parola trebuie sa contine cel putin 6 caractere.Nu este permisa folosirea caracterelor speciale.</small>
              </div>
              <div class="form-group">
-                 <label for="confirm">Confirm password</label>
-                 <input type="password" class="form-control" id="confirm" placeholder="Password" required>
+                 <label for="confirmp">Confirm password</label>
+                 <input type="password" class="form-control" id="confirmp" name="confirmp" placeholder="Password" required>
              </div>
-             <div class="form-group">
+             <div class="form-group text-right mr-5">
                  <button type="submit" class="btn btn-primary btn block">Inregistreaza</button>
              </div>
           </form>
         </div>
-        <div class="card-footer align-content-center">
-            <p>Ai cont?<a href="login.html">Logare</a></p>
+        <div class="card-footer text-center">
+            <p >Ai cont?<a href="login.html">Logare</a></p>
         </div>
         </div>
     </div>
